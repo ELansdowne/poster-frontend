@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div class="header" fxLayout="row" fxLayoutAlign="space-between">
+      <span>Purvi Associates</span>
+      <div fxLayoutGap="20px">
+        <button mat-mini-fab (click)="onDeleteItem()">
+          <mat-icon>remove</mat-icon>
+        </button>
+        <button mat-mini-fab (click)="onAddItem()">
+          <mat-icon>add</mat-icon>
+        </button>
+        <a mat-stroked-button routerLink="." style="font-weight: bolder">Logout</a>
+      </div>
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,36 @@
+.sign-in__card {
+  width: 500px;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+mat-card {
+  padding: 50px 20px;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 50px
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container>* {
+  width: 100%;
+}
+
+mat-card-title {
+  background-color: blue;
+}

@@ -6,16 +6,21 @@
         <!-- <mat-card-title>Log in</mat-card-title> -->
         <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
       </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"
+        style="border-radius: 80%;padding: 60px">
       <mat-card-content>
         <form class="example-container" fxLayout="column" fxLayoutGap="20px">
-          <mat-form-field>
-            <input type="text" matInput placeholder="UserName">
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
           </mat-form-field>
-          <mat-form-field>
-            <input type="password" matInput placeholder="Password">
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon matSuffix>vpn_key</mat-icon>
           </mat-form-field>
-          <span>Forgot password?</span>
+          <a [routerLink]="['/forgot-password']"> <span>Forgot password?</span></a>
         </form>
       </mat-card-content>
       <mat-card-actions>

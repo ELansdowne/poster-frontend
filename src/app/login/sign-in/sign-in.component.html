@@ -1,31 +1,18 @@
 <div class="sign-in">
-  <div class="sign-in__card">
-    <mat-card>
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <!-- <mat-card-title>Log in</mat-card-title> -->
-        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
-      </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"
-        style="border-radius: 80%;padding: 60px">
-      <mat-card-content>
-        <form class="example-container" fxLayout="column" fxLayoutGap="20px">
-          <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          </mat-form-field>
-          <mat-form-field appearance="outline">
-            <mat-label>Password</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>vpn_key</mat-icon>
-          </mat-form-field>
-          <a [routerLink]="['/forgot-password']"> <span>Forgot password?</span></a>
-        </form>
-      </mat-card-content>
-      <mat-card-actions>
-        <button type="button" class="btn btn-primary">SIGN IN</button>
-      </mat-card-actions>
-    </mat-card>
+  <div class="container">
+    <!-- <h1>LOG IN</h1> -->
+    <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/58d2ee3f2a4e8.jpg" alt="Photo of a Shiba Inu"
+      style="width:150px">
+    <form>
+      <div class="textbox">
+        <input type="text" placeholder="username">
+      </div>
+      <div class="textbox">
+        <input type="password" placeholder="password">
+      </div>
+      <input class="btn" type="submit">
+    </form>
+    <a class="hover-button" [routerLink]="['/forgot-password']">FORGOT PASSWORD ?</a>
+    <a class="hover-button" [routerLink]="['/sign-up']">CREATE ACCOUNT</a>
   </div>
 </div>

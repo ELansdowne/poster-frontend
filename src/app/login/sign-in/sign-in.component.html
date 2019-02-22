@@ -3,27 +3,15 @@
     <!-- <h1>LOG IN</h1> -->
     <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/58d2ee3f2a4e8.jpg" alt="Photo of a Shiba Inu"
       style="width:150px">
-    <form [formGroup]="signInForm" (ngSubmit)="onSignIn()" fxLayout="column wrap" fxLayoutGap="20px">
+    <form [formGroup]="signInForm" (ngSubmit)="onSignIn()" fxLayoutGap="20px">
       <div class="textbox">
-        <input matInput type="email" formControlName="email" placeholder="Enter email" required>
-        <mat-error *ngIf="signInForm.get('email').hasError('email') && !signInForm.get('email').hasError('required')">
-          Please enter a valid email address
-        </mat-error>
-        <mat-error *ngIf="signInForm.get('email').hasError('required')">
-          Email is <strong>required</strong>
-        </mat-error>
-
-        <!-- 
-        <mat-error>
-          <div *ngIf="signInForm.get('email').hasError('email')">please enter a valid email</div>
-          <div *ngIf="signInForm.get('email').hasError('required')">please enter Email</div>
-        </mat-error> -->
+        <input type="email" formControlName="email" placeholder="Enter email" required>
       </div>
+      <mat-error *ngIf="signInForm.get('email').hasError('email') && !signInForm.get('email').hasError('required')">
+        Please enter a valid email address
+      </mat-error>
       <div class="textbox">
-        <input matInput type="password" formControlName="password" placeholder="Enter password" required>
-        <mat-error *ngIf="signInForm.get('password').hasError('required')">
-          <div>please enter password</div>
-        </mat-error>
+        <input type="password" formControlName="password" placeholder="Enter password" required>
       </div>
       <input class="btn" type="submit">
     </form>

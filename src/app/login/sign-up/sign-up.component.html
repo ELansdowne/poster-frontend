@@ -3,21 +3,21 @@
     <!-- <h1>SIGN UP</h1> -->
     <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/58d2ee3f2a4e8.jpg" alt="Photo of a Shiba Inu"
       style="width:150px">
-    <form>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSignUp()" fxLayoutGap="20px">
       <div class="textbox">
-        <input type="text" placeholder="Enter first name">
+        <input type="text" formControlName="firstName" placeholder="Enter first name">
       </div>
       <div class="textbox">
-        <input type="test" placeholder="Enter last name">
+        <input type="test" formControlName="lastName" placeholder="Enter last name">
       </div>
       <div class="textbox">
-        <input type="email" placeholder="Enter email">
+        <input type="email" formControlName="email" placeholder="Enter email">
       </div>
       <div class="textbox">
-        <input type="password" placeholder="Enter password">
+        <input type="password" formControlName="password" placeholder="Enter password">
       </div>
       <div class="textbox">
-        <input type="password" placeholder="Confirm password">
+        <input type="password" formControlName="confirmPassword" placeholder="Confirm password">
       </div>
       <input class="btn" type="submit">
     </form>

@@ -3,12 +3,15 @@
     <!-- <h1>LOG IN</h1> -->
     <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/58d2ee3f2a4e8.jpg" alt="Photo of a Shiba Inu"
       style="width:150px">
-    <form>
+    <form [formGroup]="signInForm" (ngSubmit)="onSignIn()" fxLayoutGap="20px">
       <div class="textbox">
-        <input type="text" placeholder="username">
+        <input type="email" formControlName="email" placeholder="Enter email" required>
       </div>
+      <mat-error *ngIf="signInForm.get('email').hasError('email') && !signInForm.get('email').hasError('required')">
+        Please enter a valid email address
+      </mat-error>
       <div class="textbox">
-        <input type="password" placeholder="password">
+        <input type="password" formControlName="password" placeholder="Enter password" required>
       </div>
       <input class="btn" type="submit">
     </form>

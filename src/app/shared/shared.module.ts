@@ -37,6 +37,7 @@ import {
 } from '@angular/material';
 import { LayoutNavComponent } from './components/layout-nav/layout-nav.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 const ANGULAR_MODULE: any[] = [FormsModule, ReactiveFormsModule];
 const MATERIAL_MODULES: any[] = [
   CdkTableModule,

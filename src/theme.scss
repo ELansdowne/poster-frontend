@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+@import './palettes.scss';
+@include mat-core();
+$primary: mat-palette($mat-burgundy);
+$accent: mat-palette($mat-blue);
+$theme: mat-light-theme($primary, $accent);
+@include angular-material-theme($theme);
+
+.dark-theme {
+  $dark-primary: mat-palette($mat-light-blue);
+  $dark-accent: mat-palette($mat-green);
+  $dark-theme: mat-dark-theme($dark-primary, $dark-accent);
+  @include angular-material-theme($dark-theme);
+}
+
+$custom-typography: mat-typography-config($font-family: 'Avenir Next LT Pro');
+@include mat-core($custom-typography);

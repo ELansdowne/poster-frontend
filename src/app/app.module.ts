@@ -9,9 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MainComponent } from './main/main.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { CarouselComponent } from './shared/components/carousel/carousel.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, DashboardComponent],
+  declarations: [
+    AppComponent,
+    MainComponent,
+    DashboardComponent,
+    CarouselComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

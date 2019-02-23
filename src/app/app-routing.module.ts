@@ -9,11 +9,11 @@ const routes: Routes = [
     loadChildren: './login/login.module#LoginModule'
   },
   {
-    path: '',
+    path: 'dashboard',
     component: MainComponent,
     children: [
       {
-        path: 'dashboard',
+        path: '',
         component: DashboardComponent
       }
     ]

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -10,7 +11,8 @@ import { MatSnackBar } from '@angular/material';
 export class SignInComponent implements OnInit {
   constructor(
     private readonly formBuilder: FormBuilder,
-    private readonly snackBar: MatSnackBar
+    private readonly snackBar: MatSnackBar,
+    private readonly router: Router
   ) {}
 
   public signInForm: FormGroup = this.formBuilder.group({
@@ -23,6 +25,7 @@ export class SignInComponent implements OnInit {
     // tslint:disable-next-line:no-console
     console.log('here', this.signInForm);
     if (this.signInForm.status === 'VALID') {
+      this.router.navigate(['/dashboard']);
       // travel to dashboard
     } else {
       this.snackBar.open('please fill all required details', 'DONE', {

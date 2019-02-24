@@ -1,3 +1,7 @@
+mat-sidenav-container {
+  background-color: #f1f3f6
+}
+
 .toolbar-filler {
   flex: 1 1 auto
 }
@@ -26,7 +30,7 @@ mat-toolbar {
   height: 70px;
   box-shadow: 5px 5px 5px grey;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .search-icon {
@@ -39,12 +43,14 @@ mat-toolbar {
 }
 
 .search-input {
+  margin-right: 0px;
+  margin-left: 0px;
   display: flex;
-  width: 1000px;
-  box-shadow: 5px 5px 5px grey;
+  width: 70%;
+  // box-shadow: 5px 5px 5px grey;
 
   input {
-    width: 1000px;
+    width: 70%;
     height: 40px;
     color: #000;
   }

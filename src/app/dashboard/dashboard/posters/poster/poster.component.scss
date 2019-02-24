@@ -1,0 +1,25 @@
+.example-card {
+  // max-width: 400px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.example-card img {
+  -webkit-filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.example-card:hover {
+  -webkit-filter: brightness(100%);
+  box-shadow: 5px 5px 15px 15px #DCDCDC;
+}

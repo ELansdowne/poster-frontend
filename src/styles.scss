@@ -1,12 +1,11 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
 html,
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Avenir Next LT Pro';
+  // font-family: 'Avenir Next LT Pro';
   height: 100%;
   overflow-x: hidden;
+  background-color: #f1f2f6;
 }
 
 .container {
@@ -64,4 +63,8 @@ a:hover {
   margin: auto;
   transition: 0.4s all;
   color: #3498db;
+}
+
+mat-icon {
+  cursor: pointer;
 }

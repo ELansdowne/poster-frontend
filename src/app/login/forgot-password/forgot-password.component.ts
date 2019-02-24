@@ -19,6 +19,7 @@ export class ForgotPasswordComponent implements OnInit {
 
   ngOnInit(): void {}
   onForgotPassword(): void {
+    // tslint:disable-next-line:no-console
     console.log('on forgot');
     if (this.forgotPasswordForm.status === 'VALID') {
       // travel to dashboard

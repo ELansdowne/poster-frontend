@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MainComponent } from './main/main.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
 import { PostersComponent } from './dashboard/dashboard/posters/posters.component';
@@ -28,8 +27,7 @@ import { PosterComponent } from './dashboard/dashboard/posters/poster/poster.com
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    FlexLayoutModule,
-    NgbModule
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

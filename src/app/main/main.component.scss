@@ -27,8 +27,9 @@ mat-sidenav-container {
 }
 
 mat-toolbar {
-  height: 70px;
-  box-shadow: 5px 5px 5px grey;
+  // position:relative;
+  height: 10%;
+  // box-shadow: 5px 5px 5px grey;
   display: flex;
   justify-content: space-evenly;
 }
@@ -51,7 +52,7 @@ mat-toolbar {
 
   input {
     width: 70%;
-    height: 40px;
+    // height: 10%;
     color: #000;
   }
 }

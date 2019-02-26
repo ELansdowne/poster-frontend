@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
 import { PostersComponent } from './dashboard/dashboard/posters/posters.component';
 import { PosterComponent } from './dashboard/dashboard/posters/poster/poster.component';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PosterComponent } from './dashboard/dashboard/posters/poster/poster.com
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

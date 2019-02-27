@@ -7,7 +7,8 @@
   <img [routerLink]="['/poster']" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
   <mat-card-actions fxLayoutAlign="end" fxLayoutGap="20px">
     <div class="icon">
-      <mat-icon [inline]="true" aria-label="Menu" class="material-icons" matBadgeColor="warn" matTooltip="watch preview">image_search</mat-icon>
+      <mat-icon [inline]="true" aria-label="Menu" class="material-icons" matBadgeColor="warn" matTooltip="Quick view"
+        (click)="onImagePreview()">image_search</mat-icon>
     </div>
     <div class="icon" (click)="onWishlistAdd()">
       <mat-icon [inline]="true" aria-label="Menu" class="material-icons" matBadgeColor="warn" matTooltip="Add to favourites">favorite</mat-icon>

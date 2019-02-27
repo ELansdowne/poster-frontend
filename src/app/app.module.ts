@@ -12,6 +12,7 @@ import { CarouselComponent } from './shared/components/carousel/carousel.compone
 import { PostersComponent } from './dashboard/dashboard/posters/posters.component';
 import { PosterComponent } from './dashboard/dashboard/posters/poster/poster.component';
 import { LoginModule } from './login/login.module';
+import { PosterPreviewComponent } from './dashboard/shared/component/poster-preview/poster-preview.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginModule } from './login/login.module';
     PosterComponent,
     PostersComponent,
     CarouselComponent,
-    DashboardComponent
+    DashboardComponent,
+    PosterPreviewComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { LoginModule } from './login/login.module';
     LoginModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [PosterPreviewComponent]
 })
 export class AppModule {}

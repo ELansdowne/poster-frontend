@@ -11,14 +11,15 @@ mat-sidenav-container {
 }
 
 .icon:hover {
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  transition: all 1s ease;
-  -webkit-transition: all 01s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  border-radius: 15px;
-  font-size: 42px;
+  // transform: rotate(360deg);
+  // -webkit-transform: rotate(360deg);
+  // transition: all 1s ease;
+  // -webkit-transition: all 01s ease;
+  // -moz-transition: all 1s ease;
+  // -o-transition: all 1s ease;
+  // border-radius: 15px;
+  // font-size: 42px;
+  color: red;
 }
 
 .icon {

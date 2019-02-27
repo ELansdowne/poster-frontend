@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-poster',
@@ -6,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./poster.component.scss']
 })
 export class PosterComponent implements OnInit {
-  constructor() {}
+  constructor(private snackBar: MatSnackBar) {}
 
   ngOnInit(): void {}
+  onWishlistAdd(): void {
+    this.snackBar.open('Added to favourites', 'OK', {
+      duration: 2000
+    });
+  }
 }

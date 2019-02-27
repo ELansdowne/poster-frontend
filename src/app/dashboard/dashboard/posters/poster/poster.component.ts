@@ -25,6 +25,7 @@ export class PosterComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
+      // tslint:disable-next-line:no-console
       console.log('The dialog was closed');
       // this.animal = result;
     });

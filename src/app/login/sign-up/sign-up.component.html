@@ -1,8 +1,7 @@
 <div class="forgot-password">
   <div class="container">
     <!-- <h1>SIGN UP</h1> -->
-    <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/58d2ee3f2a4e8.jpg" alt="Photo of a Shiba Inu"
-      style="width:150px">
+    <img src="../../../assets/fly-wite.jpg" style="margin-left:20px;" height="250px" width="250px">
     <form [formGroup]="signUpForm" (ngSubmit)="onSignUp()" fxLayoutGap="20px">
       <div class="textbox">
         <input type="text" formControlName="firstName" placeholder="Enter first name">
@@ -21,6 +20,6 @@
       </div>
       <input class="btn" type="submit">
     </form>
-    <a class="hover-button" [routerLink]="['forgot-password']">FORGOT PASSWORD ?</a>
+    <a class="hover-button" [routerLink]="['/forgot-password']">FORGOT PASSWORD ?</a>
   </div>
 </div>

@@ -1,0 +1,17 @@
+<div fxLayout="row" fxLayoutAlign="start space-between" fxLayoutGap="40px">
+  <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <span fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="40px">
+    <span>
+      <h1>Product Name</h1>
+      <h2>Product Description</h2>
+      <h3>12 * 18</h3>
+      <h3>300 GSM paper</h3>
+    </span>
+    <span fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start space-between">
+      <button mat-raised-button color="primary" (click)="onProductDetails()">Product Details <mat-icon [inline]="true"
+          aria-label="Menu" class="material-icons" matBadgeColor="warn" matTooltip="product details">details</mat-icon></button>
+      <button mat-raised-button color="primary">Add to CART <mat-icon [inline]="true" aria-label="Menu" class="material-icons"
+          matBadgeColor="warn" matTooltip="Add to cart">shopping_cart</mat-icon></button>
+    </span>
+  </span>
+</div>

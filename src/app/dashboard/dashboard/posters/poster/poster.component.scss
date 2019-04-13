@@ -23,3 +23,16 @@
   -webkit-filter: brightness(100%);
   box-shadow: 5px 5px 15px 15px #DCDCDC;
 }
+
+.icon {
+  font-size: 32px;
+  transition: 0.4s all;
+}
+
+.mat-icon {
+  color: red;
+}
+
+.mat-icon:hover {
+  color: #2196f3;
+}

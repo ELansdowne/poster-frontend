@@ -5,9 +5,8 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { MainComponent } from './main/main.component';
-import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
 import { PostersComponent } from './dashboard/dashboard/posters/posters.component';
 import { PosterComponent } from './dashboard/dashboard/posters/poster/poster.component';
@@ -15,26 +14,16 @@ import { LoginModule } from './login/login.module';
 import { PosterPreviewComponent } from './dashboard/shared/component/poster-preview/poster-preview.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainComponent,
-    PosterComponent,
-    PostersComponent,
-    CarouselComponent,
-    DashboardComponent,
-    PosterPreviewComponent
-  ],
+  declarations: [AppComponent, MainComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    FlexLayoutModule,
     LoginModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [PosterPreviewComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

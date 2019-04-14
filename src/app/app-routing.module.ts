@@ -16,11 +16,7 @@ const routes: Routes = [
     children: [
       {
         path: 'dashboard',
-        component: DashboardComponent
-      },
-      {
-        path: 'poster',
-        component: PosterComponent
+        loadChildren: './dashboard/dashboard.module#DashboardModule'
       }
     ]
   }

@@ -38,7 +38,9 @@ import {
 import { LayoutNavComponent } from './components/layout-nav/layout-nav.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 const ANGULAR_MODULE: any[] = [FormsModule, ReactiveFormsModule];
+const ANGULAR_LAYOUT_MODULE: any[] = [FlexLayoutModule];
 const MATERIAL_MODULES: any[] = [
   CdkTableModule,
   MatButtonModule,
@@ -89,7 +91,13 @@ const SHARED_COMPONENTS: any[] = [
 ];
 
 @NgModule({
-  imports: [FormsModule, CommonModule, ANGULAR_MODULE, MATERIAL_MODULES],
+  imports: [
+    FormsModule,
+    CommonModule,
+    ANGULAR_MODULE,
+    MATERIAL_MODULES,
+    ANGULAR_LAYOUT_MODULE
+  ],
   declarations: [
     LAYOUT_COMPONENTS,
     SHARED_COMPONENTS,
@@ -104,6 +112,7 @@ const SHARED_COMPONENTS: any[] = [
   ],
   exports: [
     ANGULAR_MODULE,
+    ANGULAR_LAYOUT_MODULE,
     MATERIAL_MODULES,
     LAYOUT_COMPONENTS,
     SHARED_COMPONENTS

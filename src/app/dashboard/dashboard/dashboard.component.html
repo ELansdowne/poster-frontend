@@ -1,8 +1,9 @@
 <div class="sub-container" fxLayoutGap="40px">
   <app-carousel></app-carousel>
   <div fxLayout="row wrap">
-    <div *ngFor="let item of items" fxFlex="25" fxFlex.md="50" fxFlex.xs="100" fxFlex.sm="100">
-      <app-posters></app-posters>
-    </div>
+    <!-- <div *ngFor="let item of items" fxFlex="25" fxFlex.md="50" fxFlex.xs="100" fxFlex.sm="100">
+      <app-poster></app-poster>
+    </div> -->
+    <app-poster *ngFor="let item of items" fxFlex="25" fxFlex.md="50" fxFlex.xs="100" fxFlex.sm="100"></app-poster>
   </div>
 </div>

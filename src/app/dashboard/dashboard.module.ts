@@ -7,6 +7,7 @@ import { PosterComponent } from './dashboard/posters/poster/poster.component';
 import { PostersComponent } from './dashboard/posters/posters.component';
 import { CarouselComponent } from '../shared/components/carousel/carousel.component';
 import { PosterPreviewComponent } from './shared/component/poster-preview/poster-preview.component';
+import { PosterDetailsComponent } from './dashboard/poster-details/poster-details.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule, DashboardRoutingModule],
@@ -15,7 +16,8 @@ import { PosterPreviewComponent } from './shared/component/poster-preview/poster
     PosterComponent,
     PostersComponent,
     CarouselComponent,
-    PosterPreviewComponent
+    PosterPreviewComponent,
+    PosterDetailsComponent
   ],
   exports: [],
   providers: [],

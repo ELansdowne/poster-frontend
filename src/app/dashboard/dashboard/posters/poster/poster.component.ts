@@ -21,7 +21,7 @@ export class PosterComponent implements OnInit {
   }
   onImagePreview(): void {
     const dialogRef: any = this.dialog.open(PosterPreviewComponent, {
-      data: { name: 'aka' }
+      data: { name: 'aka' },
     });
 
     dialogRef.afterClosed().subscribe(result => {

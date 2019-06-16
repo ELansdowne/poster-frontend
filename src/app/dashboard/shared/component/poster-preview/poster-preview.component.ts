@@ -17,6 +17,6 @@ export class PosterPreviewComponent implements OnInit {
   ngOnInit(): void {}
   onProductDetails(): void {
     this.dialogRef.close();
-    this.router.navigate(['/poster']);
+    this.router.navigate(['/details']);
   }
 }

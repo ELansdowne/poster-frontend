@@ -39,6 +39,7 @@ import { LayoutNavComponent } from './components/layout-nav/layout-nav.component
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LoaderDialogComponent } from '../dashboard/shared/dialog/loader-dialog/loader-dialog.component';
 const ANGULAR_MODULE: any[] = [FormsModule, ReactiveFormsModule];
 const ANGULAR_LAYOUT_MODULE: any[] = [FlexLayoutModule];
 const MATERIAL_MODULES: any[] = [
@@ -102,9 +103,10 @@ const SHARED_COMPONENTS: any[] = [
     LAYOUT_COMPONENTS,
     SHARED_COMPONENTS,
     LayoutNavComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoaderDialogComponent
   ],
-  entryComponents: [],
+  entryComponents: [LoaderDialogComponent],
   providers: [
     { provide: DateAdapter, useClass: NativeDateAdapter }
     // LoaderService,

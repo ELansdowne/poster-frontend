@@ -8,6 +8,7 @@ import { PostersComponent } from './dashboard/posters/posters.component';
 import { CarouselComponent } from '../shared/components/carousel/carousel.component';
 import { PosterPreviewComponent } from './shared/component/poster-preview/poster-preview.component';
 import { PosterDetailsComponent } from './dashboard/poster-details/poster-details.component';
+import { LoaderDialogComponent } from './shared/dialog/loader-dialog/loader-dialog.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule, DashboardRoutingModule],

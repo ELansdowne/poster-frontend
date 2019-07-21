@@ -1,19 +1,21 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 html,
 body {
   // display: flex;
   // flex-direction: column;
   // font-family: 'Avenir Next LT Pro';
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
   background-color: #f1f2f6;
 }
 
 .container {
   width: 460px;
-  height: 650px;
+  // height: 650px;
   transform: translate-(50%, -50%);
   color: #000;
-  text-align: center;
+  // text-align: center;
   /* box-shadow: 5px 5px 15px 15px black; */
 }
 
@@ -43,7 +45,6 @@ a:hover {
 .btn {
   width: 400px;
   height: 40px;
-  background: #3498db;
   border-radius: 10px;
   margin: 14px auto;
   display: block;
@@ -62,7 +63,6 @@ a:hover {
   text-align: center;
   margin: auto;
   transition: 0.4s all;
-  color: #3498db;
 }
 
 mat-icon {

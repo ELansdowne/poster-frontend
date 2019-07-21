@@ -1,22 +1,24 @@
-<div class="sign-in">
-  <div class="container">
-    <!-- <h1>LOG IN</h1> -->
-    <!-- <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/58d2ee3f2a4e8.jpg" alt="Photo of a Shiba Inu"
-      style="width:150px"> -->
-    <img src="../../../assets/fly-wite.jpg" style="margin-left:20px;" height="250px" width="250px">
+<div class="sign-in" fxLayoutAlign="center center">
+  <mat-card class="container mat-elevation-z4" fxLayout="column" fxLayoutAlign="center center">
+    <img src="../../../assets/fly-wite.jpg" />
     <form [formGroup]="signInForm" (ngSubmit)="onSignIn()" fxLayoutGap="20px">
-      <div class="textbox">
-        <input type="email" formControlName="email" placeholder="Enter email" required>
-      </div>
-      <mat-error *ngIf="signInForm.get('email').hasError('email') && !signInForm.get('email').hasError('required')">
-        Please enter a valid email address
-      </mat-error>
-      <div class="textbox">
-        <input type="password" formControlName="password" placeholder="Enter password" required>
-      </div>
-      <input class="btn" type="submit">
+      <mat-form-field class="example-full-width">
+        <input matInput type="email" formControlName="email" placeholder="Enter email" required>
+        <mat-error *ngIf="signInForm.hasError('email') && !signInForm.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="signInForm.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput type="password" formControlName="password" placeholder="Enter password" required />
+      </mat-form-field>
     </form>
-    <a class="hover-button" [routerLink]="['/forgot-password']">FORGOT PASSWORD ?</a>
-    <a class="hover-button" [routerLink]="['/sign-up']">CREATE ACCOUNT</a>
-  </div>
+    <button fxFlex="100" mat-raised-button color="primary">Login</button>
+    <button mat-button color="primary" [routerLink]="['/button>
+    <button mat-button color="primary" [routerLink]="['/sign-up']">CREATE ACCOUNT</button>/forgot-password']">FORGOT PASSWORD ?<
+    <!-- <a  color="primary" [routerLink]="['/forgot-password']">FORGOT PASSWORD ?</a>
+    <a  color="primary" [routerLink]="['/sign-up']">CREATE ACCOUNT</a> -->
+  </mat-card>
 </div>

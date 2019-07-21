@@ -25,7 +25,9 @@ export class SignInComponent implements OnInit {
     // tslint:disable-next-line:no-console
     console.log('here', this.signInForm);
     if (this.signInForm.status === 'VALID') {
-      this.router.navigate(['/dashboard']);
+      setTimeout(() => {
+        this.router.navigate(['/dashboard']);
+      }, 4000);
       // travel to dashboard
     } else {
       this.snackBar.open('please fill all required details', 'DONE', {
